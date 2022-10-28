@@ -1,8 +1,6 @@
-import tkinter
+from sample_madlibs import hp, code, zombie, hungergames
 import random
 
-root = Tk()
-root.geometry('300X300')
-root.title('DataFlair-Mad Libs Generator')
-Label(root, text= 'Mad Libs Generator \n Have Fun!')
-Label(root, text= 'Click Any One: ', font = 'arial 15 bold'.place(x=40, y=80))
+if __name__ == "__main__":
+    m = random.choice([hp, zombie, hungergames, code])
+    m.madlib()
